@@ -14,6 +14,10 @@ const productStyle = {
   },
   description: {
     color: "#999"
+  },
+  logo_img: {
+    height: "200px",
+    width: "200px"
   }
 };
 
