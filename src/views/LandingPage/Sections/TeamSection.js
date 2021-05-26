@@ -30,27 +30,22 @@ export default function TeamSection() {
     classes.imgFluid
   );
   return (
-    <div className={classes.section}>
-      <h2 className={classes.title}>Here is our team</h2>
-      <div>
+    <div className={classes.section} style={{ backgroundColor: '#3e4f5c' }}>
+      <h1 style={{ color: '#45a9f5' }}><b>OUR TEAM</b></h1>
+      <div className={classes.container}>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img src={team1} alt="..." className={imageClasses} />
               </GridItem>
-              <h4 className={classes.cardTitle}>
-                Gigi Hadid
-                <br />
-                <small className={classes.smallTitle}>Model</small>
-              </h4>
+              <h3 style={{ color: '#45a9f5' }}>
+                <b>VALUABLE TALKS</b>
+              </h3>
               <CardBody>
-                <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
-                </p>
+                <h4 style={{ color: 'white' }}>
+                  Get a chance to learn from well-known industry experts
+                </h4>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
                 <Button
@@ -82,18 +77,13 @@ export default function TeamSection() {
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img src={team2} alt="..." className={imageClasses} />
               </GridItem>
-              <h4 className={classes.cardTitle}>
-                Christian Louboutin
-                <br />
-                <small className={classes.smallTitle}>Designer</small>
-              </h4>
+              <h3 style={{ color: '#45a9f5' }}>
+                <b>NETWORKING HOUR</b>
+              </h3>
               <CardBody>
-                <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
-                </p>
+                <h4 style={{ color: 'white' }}>
+                  An opportunity to chat with fellow hustlers
+                </h4>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
                 <Button
@@ -118,18 +108,13 @@ export default function TeamSection() {
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img src={team3} alt="..." className={imageClasses} />
               </GridItem>
-              <h4 className={classes.cardTitle}>
-                Kendall Jenner
-                <br />
-                <small className={classes.smallTitle}>Model</small>
-              </h4>
+              <h3 style={{ color: '#45a9f5' }}>
+                <b>FREELANCE ROUNDTABLE</b>
+              </h3>
               <CardBody>
-                <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
-                </p>
+                <h4 style={{ color: 'white' }}>
+                  A space where you can discuss anything and everything
+                </h4>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
                 <Button

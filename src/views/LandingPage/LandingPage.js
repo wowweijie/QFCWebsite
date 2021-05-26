@@ -18,8 +18,10 @@ import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
+import MainHeader from "./Sections/MainHeader.js";
 import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
+import ProjectSection from "./Sections/ProjectSection.js";
 import WorkSection from "./Sections/WorkSection.js";
 
 const dashboardRoutes = [];
@@ -43,13 +45,16 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/qfc_hustlers.jpg")}>
-      </Parallax>
+      <MainHeader />
+      {/* <Parallax image={require("assets/img/qfc_main.jpeg")}>
+      </Parallax> */}
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
+        </div>
+        <div>
           <TeamSection />
-          <WorkSection />
+          <ProjectSection />
         </div>
       </div>
       <Footer />
